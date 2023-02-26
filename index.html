@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Warung Tugas Pweb</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 0;
+			border-bottom: 1px solid #ccc;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+		p {
+			text-align: justify; 
+			margin: 10px;
+		}
+		nav ul {
+			list-style: none;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+		nav li {
+			margin: 0 10px;
+		}
+		nav a {
+			display: block;
+			padding: 10px;
+			background-color: #f1f1f1;
+			color: #333;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+		nav a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+		.courses {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 20px 0;
+			justify-content: space-between;
+		}
+		article {
+			flex-basis: calc(33.33% - 20px);
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		article figure {
+			margin: 0;
+			padding: 0;
+		}
+		article img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		article figcaption {
+			padding: 10px;
+			background-color: #333;
+			color: #fff;
+			font-weight: bold;
+			text-align: center;
+		}
+		article h2, article h3 {
+			margin: 10px;
+		}
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.column {
+		  	flex: 50%;
+		  	max-width: 50%;
+		  	padding: 5px;
+		}
+		.column img {
+		  	margin-top: 8px;
+		  	vertical-align: middle;
+		  	width: 100%;
+		}
+		aside {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #f1f1f1;
+			border-radius: 5px;
+		}
+		.popular-food, .contact-details {
+			flex-basis: calc(50% - 5px);
+		}
+		.popular-food a {
+			display: block;
+			padding: 5px;
+			margin-bottom: 5px;
+			background-color: #fff;
+			color: #333;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+		.popular-food a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+		footer {
+			text-align: center;
+			padding: 10px;
+			background-color: #333;
+			color: #fff;
+			font-size: 14px;
+			border-top: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Warung Tugas Pweb</h1>
+			<nav>
+				<ul>
+					<li><a href="#" class="current">Beranda</a></li>
+					<li><a href="#courses" class="current">Daftar Masakan</a></li>
+					<li><a href="#about" class="current">Tentang</a></li>
+					<li><a href="#aside" class="current">Kontak</a></li>
+				</ul>
+			</nav>
+		</header>
+		<a name="courses"></a> <a name="top2"></a>
+		<section class="courses">
+			<article>
+				<figure>
+					<img src="images/makanan1.jpg" alt="menu 1">
+					<figcaption>Makanan Enak 1</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 1</h2>
+					<h3>Makanan Surabaya</h3>
+				</hgroup>
+				<p>Makanan Enak 1 adalah makanan khas Surabaya yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>	
+			<article>
+				<figure>
+					<img src="images/makanan2.jpg" alt="menu 2">
+					<figcaption>Makanan Enak 2</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 2</h2>
+					<h3>Makanan Bali</h3>
+				</hgroup>
+				<p>Makanan Enak 2 adalah makanan khas Bali yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>
+			<article>
+				<figure>
+					<img src="images/makanan3.jpg" alt="menu 3">
+					<figcaption>Makanan Enak 3</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 3</h2>
+					<h3>Makanan Oriental</h3>
+				</hgroup>
+				<p>Makanan Enak 3 adalah makanan khas Oriental yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>
+		</section>
+		<section class="courses">
+			<article>
+				<figure>
+					<img src="images/makanan4.jpg" alt="menu 4">
+					<figcaption>Makanan Enak 4</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 4</h2>
+					<h3>Makanan Timor</h3>
+				</hgroup>
+				<p>Makanan Enak 4 adalah makanan khas Timor yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>	
+			<a name="top1"></a>
+			<article>
+				<figure>
+					<img src="images/makanan5.jpg" alt="menu 5">
+					<figcaption>Makanan Enak 5</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 5</h2>
+					<h3>Makanan Padang</h3>
+				</hgroup>
+				<p>Makanan Enak 5 adalah makanan khas Padang yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>
+			<article>
+				<figure>
+					<img src="images/makanan6.jpg" alt="menu 6">
+					<figcaption>Makanan Enak 6</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 6</h2>
+					<h3>Makanan Barat</h3>
+				</hgroup>
+				<p>Makanan Enak 6 adalah makanan khas Eropa yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>
+		</section>
+		<section class="courses">
+			<article>
+				<figure>
+					<img src="images/makanan7.jpg" alt="menu 7">
+					<figcaption>Makanan Enak 7</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 7</h2>
+					<h3>Makanan Aceh</h3>
+				</hgroup>
+				<p>Makanan Enak 7 adalah makanan khas Aceh yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>
+			<a name="top3"></a>	
+			<article>
+				<figure>
+					<img src="images/makanan8.jpg" alt="menu 8">
+					<figcaption>Makanan Enak 8</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 8</h2>
+					<h3>Makanan Jakarta</h3>
+				</hgroup>
+				<p>Makanan Enak 8 adalah makanan khas Jakarta yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>
+			<article>
+				<figure>
+					<img src="images/makanan9.jpg" alt="menu 9">
+					<figcaption>Makanan Enak 9</figcaption>
+				</figure>
+				<hgroup>
+					<h2>Makanan Enak 9</h2>
+					<h3>Makanan Jepang</h3>
+				</hgroup>
+				<p>Makanan Enak 9 adalah makanan khas Jepang yang dimasak untuk penugasan Pweb. Makanan ini pertama kali diperkenalkan ketika saya diberi penugasan Pweb dalam imajinasi saya. Setelah saya pikirkan, ternyata menurut saya menarik untuk memasukkan makanan ini di web penugasan HTML5 saya.</p>
+			</article>
+		</section>
+		<a name="about"></a>
+		<section class="about">
+  			<h2>Tentang Warung Tugas Pweb</h2>
+  			<p> Warung Pweb adalah sebuah restoran yang menyajikan berbagai macam masakan khas Imajinasi pribadi saya. Restoran ini didirikan pada tahun 2023 oleh saya sebagai peserta matkul Pweb yang memiliki impian untuk mempromosikan kelezatan masakan imajinasi ke seluruh dunia. Saat ini, Warung Pweb tidak melayani pembelian masakan apapun karena kami berkomitmen hanya untuk menyelesaikan tugas Pweb tanpa niat berjualan.</p>
+  			<p> Kami mempromosikan masakan berkualitas dengan bahan-bahan segar dan terbaik. Semua menu yang kami promosikan diolah oleh imajinasi saya yang mencoba berpengalaman di bidang kuliner. Kami juga menawarkan suasana virtual yang nyaman dan ramah, sehingga pelanggan kami dapat menikmati makanan mereka dengan tenang dan santai.</p>
+  		</section>
+  		<a name="aside"></a>
+		<aside>
+  			<section class="popular-food">
+    			<h2>Masakan Populer</h2>
+    			<ul>
+     				<li><a href="#top1">Makanan Top 1</a></li>
+      				<li><a href="#top2">Makanan Top 2</a></li>
+      				<li><a href="#top3">Makanan Top 3</a></li>
+    			</ul>
+  			</section>
+  			<section class="contact-details">
+    			<h2>Kontak</h2>
+    			<p>Warung Penugasan<br>Nama : Gabrielle Immanuel Osvaldo Kurniawan<br>NRP : 5025211135<br>Telp : 08113552625<br>Email : osvaldo.giok@gmail.com</p>
+  			</section>
+		</aside>
+		<section class="gallery">
+  			<h2>Our Gallery</h2>
+  			<div class="gallery">
+			  	<div class="column">
+				    <img src="images/gambar1.jpg" alt="gambar 1">
+				    <img src="images/gambar2.jpg" alt="gambar 2">
+				    <img src="images/gambar3.jpg" alt="gambar 3">
+			  	</div>
+			  	<div class="column">
+				    <img src="images/gambar4.jpg" alt="gambar 4">
+				    <img src="images/gambar5.jpg" alt="gambar 5">
+				    <img src="images/gambar6.jpg" alt="gambar 6">
+			  	</div>
+			</div>
+		</section>
+		<footer>
+			&copy; 2023 Warung Penugasan Pweb
+		</footer>
+	</div>
+</body>
+</html>
